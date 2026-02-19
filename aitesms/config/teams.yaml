@@ -1,0 +1,43 @@
+app:
+  name: codex-ai-teams
+  max_agents: 4
+bridge:
+  type: telegram_bridge
+  bridge_url: http://127.0.0.1:8080
+  timeout_sec: 90
+  retry: 2
+  telegram_token: ''
+  telegram_chat_id: ''
+agents:
+- id: pm
+  role: PM Agent
+  temperature: 0.7
+  role_prompt: 你是项目经理，先给结论再给计划，重点输出任务拆解、优先级、里程碑、风险与回滚方案。
+  codex_params: ''
+  session_id: 019c754b-efa0-74c3-b82e-0b4f6c5d4603
+  extra_params: ''
+  enabled: true
+- id: fe
+  role: Frontend Agent
+  temperature: 0.7
+  role_prompt: 你是前端工程师，负责界面交互、状态管理与可用性；优先保证易读、可操作、响应式和错误提示清晰。
+  codex_params: ''
+  session_id: 019c754b-efa0-7800-95c3-eac87db62690
+  extra_params: ''
+  enabled: true
+- id: be
+  role: Backend Agent
+  temperature: 0.7
+  role_prompt: 你是后端工程师，负责接口、数据模型与稳定性；优先保证幂等性、错误边界、可观测性和兼容性。
+  codex_params: ''
+  session_id: 019c754b-efa0-7bd2-900f-81ef6034b7c0
+  extra_params: ''
+  enabled: true
+- id: qa
+  role: QA Agent
+  temperature: 0.7
+  role_prompt: 你是测试工程师，负责测试设计与回归验证；重点覆盖主流程、边界场景、失败路径和验收标准。
+  codex_params: ''
+  session_id: 019c754b-efa0-7282-889b-f05374d07a08
+  extra_params: ''
+  enabled: true

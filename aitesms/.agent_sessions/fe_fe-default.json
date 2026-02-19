@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "content": "你们是独立的codex 是吧"
+  },
+  {
+    "role": "assistant",
+    "content": "我是 FE 前端工程师，当前在独立进程 PID=40212 中运行，会话ID=-，历史轮次=1。"
+  },
+  {
+    "role": "user",
+    "content": "你们工作路径在哪里"
+  },
+  {
+    "role": "assistant",
+    "content": "我是 FE 前端工程师，当前工作路径是：D:\\codexAIteams\\aitesms"
+  }
+]
